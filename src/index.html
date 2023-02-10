@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tailwind Tutorial</title>
+  </head>
+  <body>
+    <div class="w-full min-h-screen flex flex-col justify-between bg-eerie-black">
+      <!-- Naviagtion -->
+      <nav class="w-11/12 flex flex-col space-y-2 items-center mx-auto md:flex-row md:flex-wrap px-5 py-5 md:justify-between bg-eerie-black md:w-3/4">
+        <!-- Logo -->
+        <h3 class="text-3xl text-mustard">Martin Kiprotich.</h3>
+        <!-- Nav Links -->
+        <ul class="flex space-x-3">
+          <li class="underline hidden text-lg md:text-xl text-white hover:text-moonstone md:visible">
+            <a href="#about">About</a>
+          </li>
+          <li class="underline hidden text-lg md:text-xl text-white hover:text-moonstone md:visible">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+        <!-- CTA button -->
+        <button class="bg-mustard text-eerie-black px-4 text-2xl">
+          <a href="./pdf/Martin_Kosgei_Resume.pdf" download>Download CV</a>
+        </button>
+      </nav>
+
+      <main class="w-11/12 mx-auto bg-eerie-black md:w-3/4">
+        <div class="flex flex-col gap-y-4 md:grid md:grid-cols-6 md:grid-rows-3 md:gap-x-6 md:gap-y-8 md:w-full">
+          <section class="h-28 bg-rose-pompadour text-5xl flex items-center justify-center md:row-start-1 md:row-end-1 md:col-start-1 md:col-end-4">FRONTEND</section>
+          <section class="h-28 bg-mint md:row-start-1 md:row-end-1 md:col-start-4 md:col-end-6"></section>
+          <section class="h-28 bg-moonstone hidden md:row-start-1 md:row-end-1 md:col-start-6 md:col-end-7 md:block"></section>
+
+          <section class="h-28 bg-african-violet hidden row-start-2 row-end-2 col-start-1 col-end-2 md:block"></section>
+          <section class="h-28 bg-mustard text-5xl flex items-center justify-center row-start-2 row-end-2 col-start-2 col-end-5">UI/UX</section>
+          <section class="h-28 bg-rose-pompadour md:row-start-2 md:row-end-2 md:col-start-5 md:col-end-7"></section>
+
+          <section class="h-28 bg-mint hidden md:row-start-3 md:row-end-3 md:col-start-1 md:col-end-3 md:block"></section>
+          <section class="h-28 bg-moonstone hidden md:row-start-3 md:row-end-3 md:col-start-3 md:col-end-4 md:block"></section>
+          <section class="h-28 bg-mustard text-5xl flex items-center justify-center md:row-start-3 md:row-end-3 md:col-start-4 md:col-end-7">BACKEND</section>
+        </div>
+      </main>
+
+      <footer class="w-11/12 md:w-3/4 mx-auto py-5 bg-eerie-black">
+        <ul class="flex justify-center gap-5">
+          <li class="underline text-mustard text-xl hover:text-moonstone">
+            <a href="https://twitter.com/martinkiprotch">Twitter</a>
+          </li>
+          <li class="underline text-mustard text-xl hover:text-moonstone">
+            <a href="https://www.linkedin.com/in/martinkiprotich/">LinkedIn</a>
+          </li>
+          <li class="underline text-mustard text-xl hover:text-moonstone">
+            <a href="https://github.com/kiprotichmartin">GitHub</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
