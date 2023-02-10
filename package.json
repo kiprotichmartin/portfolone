@@ -68,7 +68,7 @@
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "prod": "npx tailwindcss -o ./dist/build.css --minify"
+    "prod": "npx tailwindcss -o ./public/build.css --minify"
   },
   "author": "Martin Kiprotich",
   "license": "ISC"
